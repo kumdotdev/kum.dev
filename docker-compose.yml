@@ -3,6 +3,7 @@ services:
     build: 
       context: .
       target: base
+    restart: unless-stopped
     ports:
       - 8811:80
     volumes:
